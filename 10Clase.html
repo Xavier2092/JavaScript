@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <form action="" method="post">
+       
+        <input type="text" id="numero1" placeholder="ingrese 1er numero">
+        <p>+</p>
+        <input type="text" id="numero2" placeholder="ingrese 2do numero">
+        <br>
+        <br>
+        <input type="button" value="sumar" onclick="suma()" >  &nbsp; <input type="reset" value="Reestablecer Campos" >  
+        <br>
+        <br>
+        <input type="text" id="result" readonly="readonly" placeholder="Resultado" >
+        <br>    
+        
+
+        
+    <script>
+        //NOTA: dentro del valor "onclick" de una etiqueta input de un button, va el nombre de la "function"  o "variable" del js como se puede apreciar arriba.
+        
+       var suma = function (numero1, numero2){
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            //NOTA: para extraer un valor dentro de las etiquetas de html colocamos la palabra reservada ".getElementById" (tal cual la escribi), luego dentro de parentesis y comillas el id de la etiqueta html, seguido de ".value", como se aprecia en las variables de arriba.
+            
+            
+            var resultado = parseFloat(document.getElementById("numero1").value)+parseFloat(document.getElementById("numero2").value);
+            
+            document.getElementById("result").value = numero1+numero2;
+        }
+        
+        //document.write('<input type="text" id="result"  readonly="readonly">'); <-- ESTA ES OTRA MANERA DE MOSTRAR EL RESULTADO COPIANDO ETIQUETADO HTML DENTRO DE JS ¡¡¡OJO!!!
+        
+    </script>
+    
+    
+    
+
+    </form>
+    
+</body>
+</html>
