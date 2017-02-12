@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope en JS</title>
+</head>
+<body>
+    
+    <script>
+        var variablelocal = "esta es la variable local de afuera";
+        
+        //Scope es lo que determina la accesibilidad de nuestro codigo, es decir desde donde podemos acceder a nuestras variables.
+        
+        //Scope global: podemos acceder a ellas desde cualquier parte del código.
+        
+        //Scope local: Variables creadas dentro de una funcion, solo se puede accedera ella desde su propia funcion, o una funcion anidada.
+        
+        var variableGlobal = "Esta es una variable global";
+        //alert(variableGlobal);
+        
+        var miFuncion = function(){
+            //var variablelocal = "Esta es local";
+            //alert(variableGlobal);
+            //variableGlobal = "Esta es Global, modificada";
+            //alert(variableGlobal);
+            
+            //alert(variablelocal);
+            
+            //NOTA: Si le quitamos la palabra reservada "var" a la variable "variablelocal", automaticamente la convertimos en una variable GLOBAL, y así si podremos acceder a ella desde cualquier parte del codigo.
+            
+            var Funcionlocal = function(){
+                //var variablelocal = "Esta es variable local dentro de funcion local";
+                alert(variablelocal);
+            }
+            Funcionlocal();
+            //El scopte de JS busca y ve desde dentro de una funcion hacia afuera, pero desde afuera NO se puede acceder a las variables de dentro de una funcion.
+        }
+        
+        miFuncion();
+        //alert(variablelocal);
+        //alert(variableGlobal);
+        
+        
+        //¡¡¡OJO!!! Como proteger nuestro codigo de terceros:
+        
+        /*
+        (function()(){{
+            var variableGlobal = "Esta es Global";
+            alert(variableGlobal);
+            
+            var Funcionlocal = function(){
+                variablelocal = "Esta es variable local dentro de funcionlocal";
+                //alert(variablelocal);
+            }
+            Funcionlocal();
+        }
+         
+        miFuncion();
+        alert(variableGlobal);
+        }())
+        */
+        
+        //¡¡¡OJO!!! De esta manera estara protegido nuestro codigo y variables, todo lo q este afuera de esto no podra entrar, mientras que lo que este dentro de la funcion autoinvocada si podra entrar a cualquier parte del codigo, tanto afuera como dentro de la funcion autoinvocada.
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Document Object Model</title>
+</head>
+<body>
+    
+    <h1 id="titulo">Titulo de nuestro sitio web</h1>
+    
+    <div id="subtitulo"></div>
+    
+    <p>1.- El <b>DOM</b> permite el acceso dinámico a través de la programación para acceder, añadir y cambiar dinámicamente contenido estructurado en documentos con lenguajes como ECMAScript (JavaScript).</p>
+    
+    <p id="segundo">2.- El DOM permite el acceso dinámico a través de la programación para acceder, añadir y cambiar dinámicamente contenido estructurado en documentos con lenguajes como ECMAScript (JavaScript).</p>
+    
+    <p>3.- El DOM permite el acceso dinámico a través de la programación para acceder, añadir y cambiar dinámicamente contenido estructurado en documentos con lenguajes como ECMAScript (JavaScript).</p>
+    
+    <script>
+    
+    // El DOM es la estructura de nuestro sitio web conformada por elementos llamados NODOS.
+        
+    //EL DOM  consta de dos elementos primarios: el <head> y el <body>
+        
+    // Cada unos de los elementos que conforman el head y el body son nodos alos que podemos acceder en el DOM
+    
+    //NOTA: importante que las etiquetas de script vayan al final del codigo para usar el DOM esto para asegurarse de que todos los elementos hayan cargado antes del script
+        
+        var elementosP = document.getElementsByTagName("p");
+        var segundoParrafo = document.getElementById("segundo");
+                
+    //OJO!!! No usar los "id" con .css, mejor usar las "class" (.), dejar los id para usarlos con javascript y php.
+    
+    // 1.- Crear el elemnto
+        var elemento = document.createElement("h2");
+        
+    // 2.- Crear un nodo de texto
+        var contenido = document.createTextNode("Este es nuestro titular");
+        
+    // 3.- Añadir el nodo de texto al elemento
+        elemento.appendChild(contenido);
+        
+    // 4.- Agregar atributos al elemento
+        elemento.setAttribute("align", "center");
+        
+    // 5.- Agregar el elemento al documento
+        document.getElementById("subtitulo").appendChild(elemento);
+        
+        document.body.appendChild(elemento); //para colocarlo al final de la pagina
+        
+    </script>
+    
+</body>
+</html>

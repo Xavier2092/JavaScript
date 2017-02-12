@@ -1,0 +1,1 @@
+alert("Esto es la primera clase de JavaScript :D");

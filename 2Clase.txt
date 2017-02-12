@@ -1,0 +1,29 @@
+2Clase:
+
+Variable: Es un contenedor de un VALOR.
+
+Formas de mostrar  un texto en la pantalla: 
+
+alert(variable o "texto");
+
+document.write(variable o "texto");
+
+console.log(variable o "texto"); <-- este solo se mostrara cuando se abra el inspector de elementos.
+
+NOTA: para concatenar se utiliza el signo "+".
+
+ejemplo(concatenando con etiquetado de html):
+
+ document.write("<h3>Bienvenido: "+nombre+"!</h3>");
+
+
+CLASE 3: TIPOS DE DATOS
+
+Numerico - numeros
+String - 
+Array- arreglos
+Object - objeto
+Boolean - booleanos
+Null - nulo
+NaN
+

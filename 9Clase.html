@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+        //Funciones son fragmentos de codigo que podemos reutilizar cuantas veces queramos y podemos darle dinamismo para q ejecuten o hagan cosas por nosotros
+        
+        
+       /* function prueba(nombre=prompt("Ingrese su nombre"), edad=prompt("Ingrese su edad")){
+            //instrucciones
+            document.write("Hola "+nombre+"<br>");
+            document.write("Tienes "+edad+" años");
+        }
+        
+        
+        prueba();*/
+        
+        
+       /*var suma = function sumar(numero1=prompt("Por favor ingrese el 1er numero"), numero2=prompt("Por favor ingrese el 2do numero")){
+            var numero1 = numero1;
+            var numero2 = numero2;
+            
+            return parseInt(numero1)+ parseInt(numero2);
+        }
+        
+        document.write(suma());
+        
+        document.write("<br>");
+        
+        document.write(suma());
+        */
+        
+       /* var num = prompt("Por favor escribe el 1er numero");
+        var nume = prompt("Por favor escribe el 2do numero");
+        var result = parseInt(num)+parseInt(nume);
+        
+         document.write(num+" + "+nume+" = "+result);
+         //NOTA: PARA PODER HACER LA SUMA CON UN "promt" DEBEMOS ACLARAR QUE SU VALOR ES UN NUMERO, PARA ESTO COLOCAMOS LA PALABRA RESERVADA "parseInt" seguidamente del nombre de la variable dentro de un parentesis. Ejemplo "var result = parseInt(num1)+parseInt(num2);" */   
+        
+        var numeroMaximo = function (valor1,valor2){
+            if(valor1>valor2){
+                return valor1;
+            }else{
+                return valor2;
+            }
+        }
+        
+        document.write("el numero maximo es: "+numeroMaximo(2,5));
+        //NOTA: es recomendable guardar las funciones en una variable.
+    </script>
+
+</body>
+</html>

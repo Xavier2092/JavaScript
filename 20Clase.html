@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos del DOM</title>
+</head>
+<body>
+    
+    <button id="boton">Boton</button>
+    <input type="text" id="input">
+    
+    <script>
+    
+        (function(){
+         
+            var saludo = function(){
+              console.log("focus!");
+            };
+            
+            var input = document.getElementById('input');
+            input.addEventListener("focus", saludo);
+            
+         //el evenco "change" se ejecuta cada q detecta un cambio en un campo de texto, es muy importante para los formularios de registro, pro ejm, cuando un nick esta ya en unso, este evento lo puede detectar mediante un script que busque en la base de datos de los nicks
+            
+        }())
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timers, TimeOut e Interval</title>
+</head>
+<body>
+    
+</body>
+    <script>
+    
+        (function(){
+            var contador = 0;
+            
+            //TimeOut: PERMITE EJECUTAR UNA FUNCION UNA VEZ Q EL TIEMPO Q HEMOS ESPECIFICADO SE ACABA
+            var saludo = function(){
+                contador++;
+                console.log(contador);
+                
+                if(contador === 5){
+                    clearInterval(intervalo);
+                }
+            };
+            
+            //setTimeout(saludo, 5000); <-- para ejecutarlo una sola vex
+            
+            
+            //Intervalo
+            
+            var intervalo = setInterval(saludo, 1000);//<-- para que el timeout se ejecute varias veces
+            
+        }())
+        
+    </script>
+</html>

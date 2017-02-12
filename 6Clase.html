@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Condicionales</title>
+</head>
+<body>
+    <script>
+        
+        //Operadores validos en condicionales:
+        
+        // == igual que
+        // < menor que
+        // > mayor que
+        // <= menor o igual que
+        // >= mayor o igual que
+        // ! distinto de. Ejemplo "edad != 18"
+        // || o 
+        // && y
+        //tambien se puede usar true o false
+        //NOTA: cuando se colocan tres signos = (===) quiere decir que el valor tiene q ser exactamente igual.
+        
+        //if-else son las condicionales
+        var nombre = "Xavier",
+            edad = 24;
+        //las variables se pueden separar con una coma simple "," para no tener que volver a escribir la palabra reservada "var"
+        
+        if (edad >= 18 ){
+            document.write("Bienvenido "+nombre+"!");
+        }else if (nombre == "Richard"){
+            document.write("Bienvenido "+nombre); // con else if se puede agregaruna condicion extra que rompa la regla del "if"
+        }else{
+            document.write("No tiene permiso para acceder a la pagina");
+        }
+            
+        
+        
+    </script>
+</body>
+</html>

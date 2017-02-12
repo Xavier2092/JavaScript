@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificaion del estilo de los elementos</title>
+    <style>
+        .thumb {
+            width: 200px;
+            transition: 300ms all ease;
+        }
+        
+        .grande {
+            width: 400px;
+        }
+    
+        .titulo {
+            border: 1px solid navy;
+            background: #ccc;
+            padding: 10px;
+        }
+    
+        .tituloGrande{
+            font-size: 60px;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <h1 id="encabezado" class="titulo tituloGrande">Soy un encabezado \^.^/</h1>
+    
+    <script>
+        
+        var encabezado = document.getElementById("encabezado");
+        //encabezado.className = "tituloGrande";
+        encabezado.className = encabezado.replace("tituloGrande", "");
+        encabezado.style.background = "navy";
+        encabezado.style.color = "#ffffff";
+        encabezado.style.paddingTop = "20px";
+        encabezado.style.fontFamily = "helvetica"; //<-- asi se agregan estilos .css en javascript
+        
+    </script>
+
+</body>
+</html>

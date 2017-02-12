@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificaion del estilo de los elementos</title>
+    <style>
+        .thumb {
+            width: 250px;
+            height: 250px;
+            transition: 300ms all ease;
+        }
+        
+        .grande {
+            width: 700px;
+            height: 600px;
+        }
+        
+    </style>
+</head>
+<body>
+   
+   <form action="">
+   <input type="button" value="Cambio de tamaño" onclick="zoom();">
+   </form>
+   
+   <img class="thumb" id="thumb" src="http://flexoffense.com/wp-content/uploads/2016/01/Anllela-Sagra-1-1.jpg" width="600" height="600" alt="">
+   
+   <script>
+        //Practica de efecto de zoom de una imagen
+        
+        var zoom = function(){
+            var thumb = document.getElementById("thumb");
+            if(thumb.className == "thumb"){
+                thumb.className = "thumb grande";
+            }else{
+                thumb.className = "thumb";
+            }
+            //thumb.setAttribute("class", "thumb grande");//<-- se puede hacer tanto como con .setAttribute como con .className
+            
+        }     
+   </script>
+
+</body>
+</html>

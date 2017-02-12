@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar los Nodos del DOM</title>
+</head>
+<body>
+    
+
+        <ol id="lista">
+            <li id="primero">Lorem, ipsum <b>dolor</b> sit amet.</li>
+            <li id="segundo">Asperiores ad, quam unde. Fuga.</li>
+        </ol>
+    
+    <script>
+        
+        //Vamos a ver como modificar y acceder al contenido de un elemento, y tambien como reemplazar los elementos del DOM
+        
+        /*var primerElemento = document.getElementById("primero");
+        var segundoElemento = document.getElementById("segundo");
+        
+        primerElemento.innerHTML = "Nuevo texto en el <i>primer elemento</i>";//<-- una de las formas de acceder y modificar el contenido de un Nodo, con innerHTML se pueden colocar etiquetas HTML.
+        
+        segundoElemento.textContent = "Nuevo texto en el <i>segundo elemento</i>"; //<--otra forma de hacerlo pero no admite etiquetas HTML, aunque textContent es mucho mas seguro para trabajar con formularios
+        */
+        
+        var elemento = document.createElement("li");
+        
+        var contenido = document.createTextNode("Nuevo Texto");
+        
+        elemento.appendChild(contenido);
+        
+        var padre = document.getElementsByTagName("li")[0].parentNode;
+        
+        var referencia = document.getElementsByTagName("li")[0];
+        
+        padre.removeChild(referencia);//<-- esto para eliminar elementos del DOM
+        
+        //padre.replaceChild(elemento, referencia);
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciclo For</title>
+</head>
+<body>
+    <script>
+        
+        //es una estructura que nos permite repetir nuestro codigo x  numero de veces.
+        
+        //var i = 0;
+        
+        //Dentro de los parentesis del ciclo For, van los siguientes valores:
+        
+        //la variable declarada(que por lo general es i)
+        
+        //las veces que queremos que se repita el valor de esta variable. Ejm: queremos que el valor de "i" se repita hasta llegar a 10, no más. Se declara "i <= 10"
+        
+        //Por ultimo lo que queremos ejecutar con esta variable, es decir, si queremos que aumente (++) o decremente (--). Ejm: "i++"
+        
+        //for( i == 0; i <= 20; i++ ){
+          //  if(i%2==0){
+            //document.write(i+"<br>"); 
+            //}
+        //}
+        
+        //Ciclo de dias de la semana:
+        
+        var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+        
+        document.write("Días de la semana: <br><br>");
+        
+        for(i = 0; i<=dias.length - 1; i++){
+            
+            document.write(dias[i] + "<br>");
+        }
+        
+        var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        
+        document.write("<br><br>Meses del año: <br><br>");
+        
+        for(i = 0; i<=meses.length - 1; i++){
+            document.write(meses[i]+"<br>");
+        }
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Variables</title>
+</head>
+<body>
+
+<script type="text/javascript">
+//Tipos de Datos 
+	
+	//1) NUMERICO: Integer o Float (no hay que especificar si es integer o float)
+
+	var edad = 19.2;
+	var numero = 12
+	//suma = edad+numero;
+
+	//document.write("suma = "+suma);
+
+	//2) STRING: Cadena de texto
+
+	var nombre = "Richard";
+	
+	var apellido ="Carrillo";
+	
+	//var texto ="Xavier es el papá de los \"pollitos\""; Se utiliza el \ para colocar comillas dentro de otras comillas y se lea en el documento como comillas.
+	
+	//document.write(texto);
+	
+	//document.write(nombre+" "+apellido);
+	
+	//3) ARRAY: Es un conjunto de elementos de cualquier tipo. Es como si en una variable pudieramos almacenar varios elementos de cualquier tipo, y no solo uno.
+
+	var amigos= ["Carlos", "Alejandro", "Cesar"];
+
+	document.write(amigos["2"]+" y "+amigos["0"]); //<-- se coloca el nombre del arreglo(amigos) se abren los corchetes y se coloca el numero del arreglo quequeremos imprimir en pantalla (comienza contando desde CERO "0", de izquierda a derecha)
+
+	//4) OBJECT: Objetos
+	
+	var objeto ={
+		color: "black",
+		size: 12,
+	} 
+
+	//4) BOOLEAN: booleanos: true, false, undefined
+	
+	var boleano = false;
+
+	//5) UNDEFINED: variable undefinida, es decir, sin valor asignado.
+	
+	var xavier;
+
+	//6) NULL: anular valores de variables
+	var numero2 = 10;
+	var numero2 = null;
+
+	//7) NaN: invalidar valores de variables, es decir, nos  muestra NaN en pantalla cuando queremos realizar una operacion con variables que no esta permitida, por ejm: multiplicar una cadena de texto
+
+	var texto2 = "Hola como estas?";
+	document.write(texto2*2);
+
+
+</script>
+
+</body>
+</html>

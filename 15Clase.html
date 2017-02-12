@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agreganr  Nodos al DOM</title>
+</head>
+<body>
+    
+    
+        <ol id="lista">
+            <li>Lorem, ipsum dolor sit amet.</li>
+            <li>Asperiores ad, quam unde. Fuga.</li>
+        </ol>
+    
+    <script>
+        
+        var elemento = document.createElement("li");
+        
+        var contenido = document.createTextNode("Nuevo Texto");
+        
+        elemento.appendChild(contenido);
+                
+        
+        var padre = document.getElementsByTagName("li")[0].parentNode;
+        
+        var hijo = document.getElementsByTagName("li")[0];
+        padre.insertBefore(elemento, hijo);
+        
+        //MOTA: para agregar el contenido al final de la pagina se coloca ".appenChild" mientras que para agregarlo al inicio o en cualquier parte del body se coloca ".insertBefore(variable, variable)"
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Variables</title>
+</head>
+<body>
+<header align="center">
+<script type="text/javascript">
+	
+	var nombre; //= "Xavier Carrillo";
+	var edad; //= 24.
+
+
+	nombre = prompt("Ingrese su nombre:"); //prompt nos permite agregarle un valor a una variable.
+
+	alert("Bienvenido "+nombre); //alert es para q el texto aparezca en un cuadro de dialogo.
+
+	//document.write("Bienvenido ", nombre); //<-- Para que aparezca DENTRO del contenido de la pagina;
+
+	//console.log("Bienvenido ", nombre); //<-- Para que el contenido se viasualice en la consola (inspector de elementos, como Java.)
+
+	edad = prompt("Por favor ingrese su edad:");
+
+	alert(nombre+" tiene "+edad+" años de edad");
+
+	if(edad>17){
+		alert("Es mayor de edad y está apto para usar nuestra web");
+		document.write("<h3>Bienvenido: "+nombre+"!</h3>");
+	}else{
+		alert("Los sentimos, es menor de edad y no puede hacer uso de nuestra web :(");
+	}
+</script>
+
+</header>
+
+
+</body>
+</html>

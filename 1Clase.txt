@@ -1,0 +1,35 @@
+1era clase JS:
+
+cómo agregar código JS en una página web.
+
+Dentro de las etiquetas de html se agrega codigo js con la etiqueta "<script></script>" <-- esto dentro del body de html. tambien se puede agregar de manera externa.
+
+ejm:
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Clase1 JS</title>
+</head>
+<body>
+	<script>
+		alert("Curso de JavaScript");
+	</script>
+	<h1>Pagina de prueba<h1>
+</body>
+</html>
+
+NOTA: si se coloca el script al inicio del body (o dentro del head) se ejecuta la ventana externa del script antes de cargar la pagina, si se coloca al final del body, primero se ejecuta la pagina y luego la ventana del js.
+
+Lo mas recomendable es hacer archivos externos de js. Y se introducen dentro de las etiquetas de html de la siguiente manera:
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Clase1 JS</title>
+	<script src="nombredelarchivo.js"></script> <-- de esta manera se hace el llamado al archivo que contiene el texto en extension js.
+
+</head>
+<body>
+	<h1>Pagina de prueba<h1>
+</body>
+</html>

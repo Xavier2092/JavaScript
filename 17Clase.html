@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso a los atributos del DOM</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: #dddddd;
+            display: inline-block;
+            margin-right: 10px;
+            border: 1px solid #AAAAAA;
+        }
+        
+        .azul {
+            background: #0074D9;
+            border: 1px solid #000;
+        }
+        
+        .roja {
+            background: #FF4136;
+            border: 1px solid #000;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <section id="contenedor">
+       <a href="http://www.google.com.ve" id="enlace">Google</a>
+        <div class=""></div>
+        <div class=""></div>
+    </section>
+    
+    
+    <script>
+    
+        var elemento = document.createElement("div");
+        var padre = document.getElementById("contenedor");
+        var referencia = document.getElementsByTagName("div")[0];
+        elemento.setAttribute("class", "azul");
+        padre.insertBefore(elemento, referencia);
+    //OJO: esto para crear un elemento, posicionarlo por delante del resto de los elementos del body, y agregarle estilo css
+        //document.getElementById("enlace").href = "http://www.google.com" //<- para editar un enlace segun su id.
+        
+    </script>
+
+</body>
+</html>
